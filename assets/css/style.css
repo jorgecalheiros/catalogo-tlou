@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+  --bg-primary: rgb(15, 15, 15);
+}
 
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  background-color: rgb(47, 47, 47);
+  background-color: var(--bg-primary);
   color: snow;
   font-family: "Anton", sans-serif;
 }
@@ -48,6 +52,7 @@ body {
 .content-header nav ul {
   list-style: none;
   display: flex;
+  font-family: "Roboto", sans-serif;
 }
 .content-header nav ul li {
   padding: 5px 10px 5px 10px;
@@ -69,9 +74,10 @@ body {
   padding: 10px 30px;
   text-decoration: none;
   color: white;
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: rgb(246, 84, 25);
   transition: background-color 100ms linear;
+  font-family: "Roboto", sans-serif;
 }
 .button-compre:hover {
   background-color: rgb(192, 53, 3);
