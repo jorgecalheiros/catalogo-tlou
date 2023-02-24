@@ -12,15 +12,38 @@ body {
 .header-heigth {
   height: 90px;
 }
+.header-main {
+  width: 100%;
+  height: fit-content;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  transition: background-color 100ms linear;
+}
+.title-header {
+  color: white;
+  text-transform: uppercase;
+}
+.header-transparent {
+  background-color: transparent;
+}
 .header-white {
   background-color: white;
+}
+.header-white .content-header .title-header {
+  color: black;
+}
+.header-white .content-header a {
+  color: black;
+}
+.header-white .content-header nav ul li:hover {
+  border-bottom: 2px solid black;
 }
 .content-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  background-color: white;
 }
 .content-header nav ul {
   list-style: none;
@@ -32,11 +55,11 @@ body {
   border: 2px solid transparent;
 }
 .content-header nav ul li:hover {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
 }
 .content-header nav ul a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: bolder;
 }
 .color-purple {
@@ -88,6 +111,7 @@ body {
 .header-secondary nav ul {
   list-style: none;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 .header-secondary nav ul a {
@@ -98,6 +122,7 @@ body {
   padding: 5px 10px 5px 10px;
   transition: border 200ms linear;
   border: 1px solid transparent;
+  text-align: center;
 }
 
 .header-secondary nav ul li:hover {
@@ -125,4 +150,11 @@ footer {
 .footer-logo {
   width: 150px;
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-secondary nav ul {
+    list-style: none;
+    display: inline;
+  }
 }

@@ -1,9 +1,11 @@
 .menu-icon {
   display: none;
   cursor: pointer;
+  background-color: white;
+  border-radius: 5px;
 }
 .menu-nav {
-  color: black;
+  color: white;
 }
 .menu-nav ul {
   padding: 10px;
