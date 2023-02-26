@@ -1,0 +1,62 @@
+.section-feedback .content-feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section-feedback .container-form {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  gap: 10px;
+}
+
+.section-feedback .container-form .container-input {
+  display: flex;
+  flex-direction: column;
+}
+.section-feedback .container-form .container-input label {
+  font-family: var(--font-roboto);
+}
+.section-feedback .container-form .container-input input,
+.section-feedback .container-form .container-input textarea {
+  padding: 10px;
+  border: 2px solid white;
+  outline: none;
+  color: white;
+  background-color: var(--bg-primary);
+}
+
+.section-feedback .container-form .container-textarea {
+  grid-column: span 2;
+}
+.section-feedback .container-form ::placeholder {
+  color: white;
+}
+.section-feedback .container-form .button-feedback {
+  grid-column: span 2;
+  background-color: white;
+  padding: 10px;
+  border: 2px solid white;
+  color: black;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 100ms linear;
+  transition: color 100ms linear;
+}
+.section-feedback .container-form .button-feedback:hover {
+  background-color: var(--bg-primary);
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  .section-feedback .container-form {
+    grid-template-columns: 100%;
+  }
+  .section-feedback .container-form .container-name,
+  .section-feedback .container-form .container-email,
+  .section-feedback .container-form .container-textarea {
+    grid-column: span 2;
+  }
+  .section-feedback .container-form .container-input {
+    width: 100% !important;
+  }
+}

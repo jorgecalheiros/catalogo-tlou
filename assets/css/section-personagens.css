@@ -98,15 +98,14 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .container-input {
+  .section-personagens .container-input {
     flex-direction: column;
-    background-color: aqua;
     width: 0 !important;
   }
-  .container-input .input-search {
+  .section-personagens .container-input .input-search {
     width: 200px;
   }
-  .container-input .button-search {
+  .section-personagens .container-input .button-search {
     margin-left: 0;
     margin-top: 10px;
   }
