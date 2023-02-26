@@ -1,0 +1,96 @@
+.header-feature {
+  background-image: url("../imgs/tlou/wallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+}
+.header-shadow-bottom-to-top {
+  background-image: linear-gradient(to top, var(--bg-primary) 1%, transparent);
+  height: 100%;
+}
+header {
+  width: 100%;
+  height: fit-content;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  transition: background-color 100ms linear;
+}
+.title-header {
+  color: white;
+  text-transform: uppercase;
+}
+.header-transparent {
+  background-color: transparent;
+}
+.header-white {
+  background-color: white;
+}
+.header-white .content-header .title-header {
+  color: black;
+}
+.header-white .content-header a {
+  color: black;
+}
+.header-white .content-header nav ul li:hover {
+  border-bottom: 2px solid black;
+}
+.content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.content-header nav ul {
+  list-style: none;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+.content-header nav ul li {
+  padding: 5px 10px 5px 10px;
+  transition: border 200ms linear;
+  border: 2px solid transparent;
+}
+.content-header nav ul li:hover {
+  border-bottom: 2px solid white;
+}
+.content-header nav ul a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+.button-comprar {
+  padding: 10px 30px;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  background-color: rgb(246, 84, 25);
+  transition: background-color 100ms linear;
+  font-family: "Roboto", sans-serif;
+}
+.button-comprar:hover {
+  background-color: rgb(192, 53, 3);
+}
+.button-comprar:active {
+  transform: scale(1.1);
+}
+@media only screen and (max-width: 600px) {
+  .header-feature {
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+  }
+  .content-header .header-logo {
+    width: 100px;
+  }
+  .content-header {
+    font-size: 0.8rem;
+  }
+  .content-header nav {
+    display: none;
+  }
+  .content-header .button-comprar {
+    display: none;
+  }
+}

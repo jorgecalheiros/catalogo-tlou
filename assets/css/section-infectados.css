@@ -1,0 +1,8 @@
+.section-estagios {
+  height: fit-content;
+}
+
+.section-estagios .infectados {
+  grid-template-columns: repeat(4, 330px);
+  margin-top: 50px;
+}

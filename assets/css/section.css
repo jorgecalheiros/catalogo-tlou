@@ -1,0 +1,33 @@
+section {
+  height: max-content;
+  color: snow;
+}
+section .content-section {
+  padding: 20px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 100%;
+}
+section .title-section {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+section .text-section {
+  line-height: 30px;
+  font-size: 1rem;
+  width: 50%;
+  font-family: "Roboto", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .text-section {
+    width: 90%;
+    text-align: justify;
+  }
+  .title-section {
+    font-size: 1.3rem !important;
+    height: 100%;
+  }
+}

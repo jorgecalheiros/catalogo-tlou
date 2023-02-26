@@ -1,67 +1,3 @@
-:root {
-  --bg-primary: rgb(15, 15, 15);
-}
-.bg-screen {
-  background-image: url("../imgs/tlou/wallpaper.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 80vh;
-}
-.bg-shadow-bottom-to-top {
-  background-image: linear-gradient(to top, var(--bg-primary) 1%, transparent);
-  height: 100%;
-}
-.content-section {
-  padding: 20px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  height: 100%;
-}
-section {
-  height: 100vh;
-  color: snow;
-}
-.section-sobre {
-  height: max-content;
-}
-.content-sipnose-image {
-  height: 100%;
-}
-.content-sipnose {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.title-section {
-  font-size: 2.5rem;
-  text-decoration: underline;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-.text-section {
-  line-height: 30px;
-  font-size: 1rem;
-  width: 50%;
-  font-family: "Roboto", sans-serif;
-}
-
-.color-red {
-  color: red;
-}
-.underline {
-  text-decoration: underline;
-}
-.container-video {
-  margin-top: 50px;
-}
-.container-video h2 {
-  margin-bottom: 10px;
-  text-decoration: underline;
-}
-
-/*SECTION PERSONAGENS*/
-
 .section-personagens {
   background-color: var(--bg-primary);
   height: max-content !important;
@@ -162,29 +98,14 @@ section {
 }
 
 @media only screen and (max-width: 600px) {
-  .bg-screen {
-    background-size: cover;
-    background-position: center;
-    height: 25vh;
-  }
-  .text-section {
-    width: 90%;
-    text-align: justify;
-  }
-  .title-section {
-    font-size: 1.5rem;
-    height: 100%;
-  }
   .container-input {
     flex-direction: column;
     background-color: aqua;
     width: 0 !important;
   }
-
   .container-input .input-search {
     width: 200px;
   }
-
   .container-input .button-search {
     margin-left: 0;
     margin-top: 10px;
@@ -192,21 +113,4 @@ section {
   .container-personagens {
     grid-template-columns: repeat(1, 85%) !important;
   }
-  .video {
-    width: 100%;
-  }
-}
-.pointer {
-  cursor: pointer;
-}
-
-/*SECTION ESTAGIOS*/
-
-.section-estagios {
-  height: fit-content;
-}
-
-.infectados {
-  grid-template-columns: repeat(4, 330px);
-  margin-top: 50px;
 }

@@ -1,0 +1,22 @@
+.container-video {
+  margin-top: 50px;
+}
+.container-video h2 {
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.section-sobre .content-sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .container-video .video {
+    width: 100%;
+  }
+  .section-sobre .content-sobre p {
+    width: 100%;
+  }
+}
