@@ -1,6 +1,3 @@
-.container-video {
-  margin-top: 50px;
-}
 .container-video h2 {
   margin-bottom: 10px;
   text-decoration: underline;
@@ -12,11 +9,38 @@
   justify-content: center;
   align-items: center;
 }
+
+.content-sobre .container-text-and-video {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+}
+
+.container-text-and-video .text-sobre {
+  height: fit-content;
+  width: 100%;
+}
+.container-text-and-video .container-video {
+  text-align: center;
+}
+
+.container-video .video {
+  border: 2px solid blue;
+  border-radius: 5px;
+}
 @media only screen and (max-width: 600px) {
   .container-video .video {
     width: 100%;
   }
   .section-sobre .content-sobre p {
     width: 100%;
+  }
+  .content-sobre .container-text-and-video {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+  }
+  .container-text-and-video .text-sobre {
+    margin-top: 10px;
   }
 }
